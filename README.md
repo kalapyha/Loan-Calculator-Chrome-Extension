@@ -6,7 +6,7 @@ https://chrome.google.com/webstore/detail/simple-loan-calculator/lbhpfgfkeknoflb
 
 ### Requirements
 
-- Mac / Linux
+- Mac / Linux / Windows
 - Browser Chrome
 
 ### Install
