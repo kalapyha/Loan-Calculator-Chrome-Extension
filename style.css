@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 600px;
+  height: 420px;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.4rem 0;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+}
+
+button {
+  letter-spacing: 0.1rem;
+}
+
+button:hover {
+  background-color: rgb(91, 42, 139);
+}
+
+.container {
+  padding: 1rem;
+  font-family: "Roboto", serif;
+  max-width: 600px;
+}
+
+.grid-item-3 {
+  grid-area: 1/3/3/4;
+  align-self: center;
+  justify-self: right;
+}
+
+.grid-item-3::before {
+  display: inline;
+  content: "";
+  font-size: 1rem;
+  border: 1px solid gainsboro;
+  margin-right: 1.5rem;
+}
+.grid-item-3 select {
+  padding: 0.5rem;
+  border-radius: 17px;
+  border: 1px solid rebeccapurple;
+  font-weight: 700;
+  font-size: 1rem;
+  color: rebeccapurple;
+  appearance: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* btn */
+.grid-item-4 {
+  grid-area: 2/1/3/3;
+  border-radius: 10px;
+  border: none;
+  background-color: rebeccapurple;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+/* LOADING */
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading div {
+  position: absolute;
+  animation: loading 1s linear infinite;
+  width: 60px;
+  height: 60px;
+  top: 70px;
+  left: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 purple;
+  transform-origin: 30px 32px;
+}
+.loading-spinner {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding-left: 35%;
+  overflow: hidden;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.loading div {
+  box-sizing: content-box;
+}
+
+/* RESULTS */
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.form-results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-results span {
+  display: block;
+  font-weight: 700;
+  padding-top: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.form-results-row {
+  padding: 1rem;
+  border-radius: 10px;
+  /* border: 1px solid lightblue; */
+  box-shadow: 1px 4px 15px -5px rgba(0, 0, 0, 0.41);
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
